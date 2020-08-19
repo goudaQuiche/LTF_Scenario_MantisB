@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>MantisBScenario</defName>
+		<label>FTL Scenario - Mantis B</label>
+		<description>This warship encourages sending massive boarding parties and keeping strong defense. Unfortunately, It crashed on this planet.</description>
+		<scenario>
+		
+			<summary>The Basilisk hibernation end</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>MantisB_Scenario_PlayerColony</factionDef>
+			</playerFaction>
+			
+			<parts>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>2</pawnCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Player pawns modifiers -->
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.2</chance>
+					<hediff>Malnutrition</hediff>
+					<severityRange>
+						<min>0.2</min>
+						<max>0.4</max>
+					</severityRange>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>ToxicBuildup</hediff>
+					<severityRange>
+						<min>0.1</min>
+						<max>0.4</max>
+					</severityRange>
+				</li>
+
+				<!-- Starting research -->
+				<!--
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Electricity</project>
+				</li>
+				-->
+
+				<!-- Player starting things -->				
+				<!-- Starting Buildings -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_MedBay</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_TpBench</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_TpSpot</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_TpCatcher</thingDef>
+					<stuff>DevilstrandCloth</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Battery</thingDef>
+					<count>2</count>
+				</li>				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>VanometricPowerCell</thingDef>
+					<count>1</count>
+				</li>
+
+				<!-- Money -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>250</count>
+				</li>
+				<!-- Medicine -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<!-- ressources-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<!-- Food -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>24</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RawBerries</thingDef>
+					<count>150</count>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ChunkSlagSteel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>LTF_MediFuel</thingDef>
+					<count>350</count>
+				</li>
+				
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>3</count>
+				</li>
+
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Megaspider</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>2</count>
+					<animalKind>Chinchilla</animalKind>
+					<bondToRandomPlayerPawnChance>.05</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!-- <li Class="ScenPart_CreateIncident"> -->
+					<!-- <def>ShipChunkDrop</def> -->
+				<!-- </li> -->
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Mantis B was not meant to be crashed.  It was meant to be in space, with your teleporting technology and your mantis crew, where your power could reign supreme.
+
+The megaspider pet was having its casual hide and seek with its dinner.  Its master said, "It's good to keep it in shape."  The dinner - an alien creature called a 'chinchilla' - managed to find a better than usual hiding place, one which was, unfortunately, very sensitive to statically charged fields.  Funnily enough, as it strove for survival, the furball galloping across metal decks generated exactly that.
+
+The resulting minor malfunction led to a badly handle quick fix. The power management for the ship should have been short circuit proof - but someone thought it would be smart to bypass the fuse system.  Malfunctions started to snowball, a bit ironically given the lack of a downhill slope in space. The engines ended up giving up and put themselves in some sort of safemode that should never have happened. At least the safemode meant that the vanometric power cells survived the crash.
+
+Space was peaceful and easy, but now your environment and constraints are different. Will you be able to adapt? Will the mantises be as good at constructing and prospering as they were at destroying lives and hopes?</text>
+					<closeSound>Sound_FtlMusicIntro</closeSound>
+				</li>
+
+			</parts>
+		</scenario>
+
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef>
+		<defName>MantisB_Scenario_PlayerColony</defName>
+		<label>Basilisk crew</label>
+		<description>Remainings of The Basilisk crash</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Mantis</basicMemberKind>
+		<pawnsPlural>Basilisk survivors</pawnsPlural>
+
+		<settlementNameMaker>NamerBaseMantisVillage</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionMantisVillage</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionMantisVillage</factionNameMaker>
+
+		<factionIconPath>WorldIcon/MantisB_factionIcon</factionIconPath>
+		<settlementTexturePath>WorldIcon/MantisB_settlementTexture</settlementTexturePath>
+
+		<colorSpectrum>
+			<!-- kestrel C violet -->
+			<li>(255,255,255)</li>
+		</colorSpectrum>
+
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outsider</li>
+					<li>MantisBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+
+		<techLevel>Industrial</techLevel>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>		
+
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

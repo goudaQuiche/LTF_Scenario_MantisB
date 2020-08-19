@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>FTL Scenario - Mantis cruiser B</name>
+	<author>Gouda quiche</author>
+	<url>https://github.com/goudaQuiche</url>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>goudaquiche.LtfMantisCruiserB</packageId>
+
+	<modDependencies>
+		<li>
+			<packageId>goudaquiche.LtfMantisRace</packageId>
+			<displayName>Mantis race</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2025343753</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>goudaquiche.LtfMedBay</packageId>
+			<displayName>Medbay</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2101075718</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>goudaquiche.teleporter</packageId>
+			<displayName>Beam me up Scotty</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1507132557</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+
+	<loadAfter>
+		<li>goudaquiche.LtfMantisRace</li>
+		<li>goudaquiche.LtfMedBay</li>
+		<li>goudaquiche.teleporter</li>
+	</loadAfter>
+
+	<description>Also called "The Basilisk", that vessel crew is composed of 2 Mantises.
+	
+In legends, a basilisk is a legendary reptile reputed to be a serpent king, who can cause death with a single glance. 
+
+In this scenario, inspired by Faster than Light, you will start with :
+- 1 medbay and 350 medifuel units to fill it
+- 1 teleport setup composed of a workstation, 2 teleport spots and 2 teleport catchers
+- 1 vanometric power cell and 2 batteries
+- 1 megaspider, 2 chinchillas
+
+- No weapon
+- 20 industrial components
+- 500 Steel
+
+You will start with no technology, but your guys used to be in a spaceship, they cant be dumb. They hope to escape this planet. Is there still time for them to traverse the sectors of space to reach the Federation Fleet, and warn them of the incoming rebel threat ? Surviving looks more essential for now.
+
+Thanks to:
+- Lilairen, Literary priestess
+</description>
+</ModMetaData>
