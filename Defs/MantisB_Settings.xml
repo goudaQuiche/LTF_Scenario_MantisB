@@ -22,7 +22,7 @@
 					</li>
 					<li>
 						<kindDefs>
-							<li>MantisAddicted</li>
+							<li>LTF_Mantis_Addicted</li>
 						</kindDefs>
 						<chance>4.0</chance>
 					</li>
@@ -91,7 +91,7 @@
 					
 					<li>
 						<kindDefs>
-							<li>MantisAddicted</li>
+							<li>LTF_Mantis_Addicted</li>
 						</kindDefs>
 						<chance>1.0</chance>
 					</li>

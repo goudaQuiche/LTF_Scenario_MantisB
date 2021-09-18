@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<FactionDef>
+	<FactionDef ParentName="FactionBase">
 		<defName>MantisB_Scenario_PlayerColony</defName>
 		<label>Basilisk stasis</label>
 		<description>Remainings of The Basilisk crash</description>
@@ -33,11 +33,6 @@
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>		
-
-		<hairTags>
-			<li>Urban</li>
-			<li>Rural</li>
-		</hairTags>
 
 		<apparelStuffFilter>
 			<thingDefs>
